@@ -1,6 +1,6 @@
-# **Portfolio**
+# **Personal Portfolio**
 
-Welcome to my **Portfolio** — a showcase of my skills, projects, and experiences. This portfolio is designed to provide visitors with an insight into my background, achievements, and the work I've accomplished.
+Welcome to my **Personal Portfolio** — a showcase of my skills, projects, and experiences. This portfolio is designed to provide visitors with an insight into my background, achievements, and the work I've accomplished.
 
 ## **Live Demo**
 🔗 [**View Live Demo**](https://thirilojan.github.io/Portfolio)

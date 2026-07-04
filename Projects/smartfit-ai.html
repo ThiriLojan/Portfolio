@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+        - favicon
+    -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+
+  <!-- 
+        - google font link
+    -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Open+Sans:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+        - material icon link
+    -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <title>SmartFit AI — Full-Stack Edge AI Fitness Trainer</title>
+
+  <!-- 
+      - custom css link
+    -->
+  <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+
+  <header class="topbar">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/Logo_dark.png" alt="Portfolio" width="32" height="32" class="dark">
+      <img src="../assets/images/Logo_light.png" alt="Portfolio" width="32" height="32" class="light">
+    </a>
+
+    <button class="icon-btn theme-btn" data-theme-btn>
+      <span class="material-symbols-outlined dark" aria-hidden="true"> dark_mode </span>
+      <span class="material-symbols-outlined light" aria-hidden="true"> light_mode </span>
+
+      <div class="state-layer"></div>
+    </button>
+  </header>
+
+  <!-- Top Bar with Title -->
+  <section class="top-bar">
+    <h1 class="project-title">SmartFit AI — Edge AI Trainer</h1>
+  </section>
+
+  <main>
+    <section class="section project-detail">
+      <div class="container">
+        <div class="project-layout">
+          <!-- Left Side -->
+          <div class="project-info">
+            <img src="../assets/images/Projects/SmartFit AI/project-4.jpg" alt="SmartFit AI Thumbnail"
+              class="project-thumbnail">
+            <h2 class="project-subtitle">SmartFit AI — Full-Stack Edge AI Fitness Trainer</h2>
+          </div>
+
+          <div class="separator"></div>
+
+          <!-- Right Side -->
+          <div class="project-details">
+            <h1 class="title-large">OVERVIEW</h1>
+            <br>
+            <p class="body-large">
+              This application is built using React 19 and Vite for the high-performance frontend architecture, paired
+              with a custom Python (Flask & OpenCV) server for backend video processing. The AI tracking features
+              leverage MediaPipe Pose Detection (Lite 3D neural model) and custom vector trigonometry algorithms to
+              process 33 3D body keypoints locally at over 60 frames per second. To ensure butter-smooth video playback
+              without browser buffer lag, the backend utilizes optimized MJPEG HTTP streaming with custom resolution and
+              compression scaling. The frontend is styled using vanilla CSS to maintain an ultra-lightweight,
+              responsive, and state-of-the-art design system.</p>
+            <br>
+
+            <h1 class="title-large">PLATFORM USED</h1>
+            <br>
+            <li>• Frontend Framework: React 19, Vite, JavaScript</li>
+            <li>• Backend Server: Python 3, Flask, CORS, Werkzeug</li>
+            <li>• Computer Vision & AI: MediaPipe Pose (3D Keypoints), OpenCV (MJPEG Streaming & Image Processing)</li>
+            <li>• Deep Learning Architecture: Custom 1D-CNN + LSTM Sequence Classification</li>
+            <li>• Styling & UI: Vanilla CSS, Glassmorphism Design System, CSS3 Micro-Animations</li>
+
+            <br>
+
+            <h1 class="title-large">FEATURES</h1>
+            <br>
+            <ul>
+              <li>• Real-Time Edge Computer Vision: Tracks 33 3D body keypoints locally with zero cloud API latency and
+                automatically calculates real-time biomechanical joint angles (elbows, knees, hips, shoulders) using 3D
+                vector trigonometry.</li>
+              <li>• Multi-Exercise Recognition & Rep Counting: Supports 13 distinct workout activities including
+                Push-ups, Squats, Pull-ups, Planks, Bicep Curls, Lunges, Jumping Jacks, Deadlifts, Crunches, Shoulder
+                Presses, and more with dynamic threshold detection and state machine logic (DOWN/UP states).</li>
+              <li>• Posture Guard & Form Validation: Ground-plane verification and spatial checks to reliably
+                distinguish vertical standing/jumping from horizontal plank positions with live posture scoring and
+                color-coded visual feedback.</li>
+              <li>• Interactive Live Playground: Zero-scroll interactive workout dashboard featuring webcam AI pose
+                estimation, click-to-edit Target Reps goals, live workout timers, and customizable tracking modes
+                (Auto-Detect vs. Free-Pose).</li>
+              <li>• Embedded Video Analysis Studio: Custom drag-and-drop video analysis studio streaming lightweight
+                640x360 MJPEG video feeds over HTTP with real-time pose skeleton overlays, live rep counting, and custom
+                video control HUDs.</li>
+              <li>• Deep Learning Model Showcase: Interactive exploration of our custom 1D-CNN + LSTM sequence
+                classification model trained on over 10,300+ workout movement clips with >98.4% recognition accuracy.
+              </li>
+              <li>• System Architecture & Data Flow Pipeline: Complete 6-step technical breakdown detailing how a single
+                video frame is captured, processed, and returned to the screen in under 16 milliseconds.</li>
+              <li>• Sleek Dark-Mode Glassmorphism UI: Curated neon orange (#ff7a00) aesthetics, frosted glass blur
+                filters (backdrop-filter: blur(16px)), and dynamic hover effects.</li>
+            </ul>
+
+            <br>
+
+            <h1 class="title-large">ABOUT</h1>
+            <br>
+            <p class="body-large">
+              The SmartFit AI project is a next-generation computer vision and deep learning fitness web application.
+              This platform transforms standard webcam and video feeds into an intelligent, real-time personal AI
+              trainer. Designed with a stunning dark-mode glassmorphism interface and smooth micro-animations, it
+              delivers zero-latency repetition counting, biomechanical joint angle calculations, and live posture
+              verification across 13 diverse workout activities.
+            </p>
+
+            <br>
+
+            <h2 class="title-large">Gallery</h2>
+            <div class="gallery">
+              <div class="gallery-grid">
+                <img src="../assets/images/Projects/SmartFit AI/1.png" alt="Home Page" class="gallery-item"
+                  onclick="openModal4(0)">
+                <img src="../assets/images/Projects/SmartFit AI/2.png" alt="Live Playground" class="gallery-item"
+                  onclick="openModal4(1)">
+                <img src="../assets/images/Projects/SmartFit AI/3.png" alt="AI Neural Net" class="gallery-item"
+                  onclick="openModal4(2)">
+                <img src="../assets/images/Projects/SmartFit AI/4.png" alt="Architecture" class="gallery-item"
+                  onclick="openModal4(3)">
+                <img src="../assets/images/Projects/SmartFit AI/5.png" alt="Upload Video" class="gallery-item"
+                  onclick="openModal4(4)">
+              </div>
+            </div>
+
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal4()">&times;</span>
+              <img class="modal-content" id="modalImage">
+              <a class="prev" onclick="changeSlide4(-1)">&#10094;</a>
+              <a class="next" onclick="changeSlide4(1)">&#10095;</a>
+            </div>
+
+            <br>
+            <br>
+
+            <h2 class="title-medium">Live Demo & GitHub</h2>
+            <a href="https://smartfit-ai-v1.vercel.app" target="_blank" class="link" style="margin-right: 15px;">🚀 Live
+              Demo</a>
+            <a href="https://github.com/ThiriLojan/SmartFit-AI" target="_blank" class="link">View on GitHub</a>
+
+            <br>
+            <br>
+
+            <a href="../index.html" class="btn">Back to Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 
+  - custom js link
+-->
+
+  <script src="../js/script_projects.js"></script>
+
+</body>
+
+</html>

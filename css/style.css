@@ -114,6 +114,8 @@
   --on-primary: var(--on-primary-light);
   --outline: var(--outline-light);
   --outline-variant: var(--outline-variant-light);
+  --btn-text-color: #ffffff; /* Black text in light mode */
+  --btn-text-hover-color: #000; /* Still black on hover */
 
 }
 
@@ -133,6 +135,8 @@
   --on-primary: var(--on-primary-dark);
   --outline: var(--outline-dark);
   --outline-variant: var(--outline-variant-dark);
+  --btn-text-color: #000; /* White text in dark mode */
+  --btn-text-hover-color: #fff; /* White on hover */
 
 }
 
@@ -414,7 +418,7 @@ body {
   padding-inline: 24px;
   border-radius: var(--radius-full);
   background-color: var(--primary);
-  color: #000 !important; /* Default font color */
+  color: var(--btn-text-color); /* Default font color */
   font-weight: var(--weight-medium);
   overflow: hidden;
   text-decoration: none;
@@ -423,7 +427,7 @@ body {
 }
 
 .btn:hover {
-  color: #fff !important; /* Font color on hover */
+  color: var(--btn-text-hover-color); /* Font color on hover */
 }
 
 
@@ -792,9 +796,8 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
-  color: #fff;
+  color: var(--btn-text-color);
   background-color: var(--primary);
   border: none;
   border-radius: 4px;
@@ -803,7 +806,7 @@ body {
 }
 
 .btn:hover {
-  background-color: darken(var(--primary), 10%);
+  background-color: var(--btn-text-hover-color);
 }
 
 .btn-primary {
@@ -960,7 +963,7 @@ body {
     max-width: 1128px;
     margin-inline: auto;
   }
-
+  
 
   /**
    * ABOUT CARD
@@ -1167,8 +1170,7 @@ body {
 }
 
 .link:hover {
-    color: #007bff);
-    
+    color: #007bff;
     transform: scale(1.03); /* Slightly enlarge the link on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -1214,3 +1216,4 @@ body {
     font-size: 18px; /* Smaller arrow buttons */
   }
 }
+
